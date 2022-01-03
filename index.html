@@ -143,6 +143,10 @@ $(document).ready(function(){
                     $("#pr-glob").css("display", "block");
               });
 
+            $("#illustrmenu").click(function () {
+                    $("#pr-illustr").css("display", "block");
+              });
+
                     $("#info").click(function () {
                         $(".project-grid").addClass("blur");
                         $(".windowcontainer").fadeIn("slow");
@@ -151,6 +155,7 @@ $(document).ready(function(){
 
                           $(".show_text").click(function () {
                               $(".act-text").fadeIn("slow");
+                              $(".text_bckg").fadeIn("slow");
                             });
 
 
@@ -161,7 +166,8 @@ $(document).ready(function(){
                                     $(".videoContainer")[0].pause();
                                     $(".tag-container").fadeIn("slow");
                                     $(".about-container").fadeIn("slow");
-                                    $(".act-text").fadeOut("slow");
+                                    // $(".act-text").fadeOut("slow");
+                                    // $(".text_bckg").fadeOut("slow");
                                });
 
 
@@ -213,6 +219,11 @@ $(document).ready(function(){
                             $(".all_tag").css("display", "none");
                             $(".web_tag").css("display", "block");
                        });
+
+                    $("#illustration").click(function () {
+                            $(".all_tag").css("display", "none");
+                            $(".illustr_tag").css("display", "block");
+                       });
      });
 
 </script>
@@ -239,7 +250,7 @@ $(document).ready(function(){
           <div class='project-grid'>
 
               <div class='project-grid-item all_tag auto_tag instal_tag print_tag' id="black">
-                <img class="menuimg" src="images/black/img_9.png"> 
+                <img class="menuimg" id="first_menu_img" src="images/black/img_9.png"> 
                 <div class="titel">&nbsp;&rarr;&thinsp;The Black Black House</div></div>
 
               <div class='project-grid-item all_tag auto_tag vid_tag instal_tag'  id="undes">
@@ -275,7 +286,7 @@ $(document).ready(function(){
                 <div class="titel">&nbsp;&rarr;&thinsp;Let Me Tell You About...</div></div>
 
               <div class='project-grid-item all_tag print_tag com_tag'  id="bdbd">
-                <img class="menuimg" src="images/bdbd/BY5A9102.png">
+                <img class="menuimg" src="images/bddb/BY5A9102.png">
                 <div class="titel">&nbsp;&rarr;&thinsp;Browsing Through the Book</div></div>
 
               <div class='project-grid-item all_tag auto_tag print_tag' id="skim">  
@@ -306,6 +317,10 @@ $(document).ready(function(){
                 <img class="menuimg" src="images/glob/intimacy.gif">
                 <div class="titel">&nbsp;&rarr;&thinsp;Globalizing Intimacy</div></div>
 
+              <div class='project-grid-item all_tag illustr_tag auto_tag print_tag'  id="illustrmenu">
+                <img class="menuimg" src="images/guess/01.png">
+                <div class="titel">&nbsp;&rarr;&thinsp;Illustrations</div></div>
+
       </div>
   </div>
 </div>
@@ -315,15 +330,7 @@ $(document).ready(function(){
       <div class="slideshow-container">
 
               <div class="pr-box" id="pr-black">
-                  <div class="act-text">
-                      The Black-Black House<br><br>
-                      In one black-black city, there is a black-black house… The places we are raised in do not define us, but they set the scenes for our identities to unfold. Referencing the Russian children's horror folklore, Black-Black House is an investigation into the concept of place. How does space become a place? How does a nine-story building on the outskirts of St. Petersburg turn into a ‘haunted’ house? Using analytical drawing and associative collaging as a method, this project draws upon media theory, geography, mnemonic systems, and recollections.<br><br>
-                      Digital print on 70g paper,<br>
-                      Lighbox: LED panel and wood.<br><br>
-                      Special thanks to:<br>Linda van Deursen and Federico Campagna.<br><br>
-                      Installation photography by Marcin Liminowicz and Roel Backaert.
-                  </div>
-                      <div class="image-container">
+                <div class="image-container">
                           <div class="image-ver"><img src="images/black/img_12.jpg"></div>
                           <div class="image-ver"><img src="images/black/img_11.jpg"></div>
                           <div class="image-hor"><img src="images/black/top_1.jpg"></div>
@@ -333,99 +340,80 @@ $(document).ready(function(){
                           <div class="image-hor"><img src="images/black/img_10.jpg"></div>
                           <div class="image-hor"><img src="images/black/taya-11.jpg"></div>
                           <div class="image-hor"><img src="images/black/taya-13.jpg"></div>
-
                           <div class="image-hor"><img src="images/black/ov_1.png"></div>
                           <div class="image-hor"><img src="images/black/ov_2.png"></div>
                           <div class="image-hor"><img src="images/black/ov_3.png"></div>
                           <div class="image-hor"><img src="images/black/ov_4.png"></div>
                           <div class="image-hor"><img src="images/black/ov_5.png"></div>
                       </div>
-                          <div class="back">&#8626;</div>
-                          <div class="show_text">about</div>
+                          <div class="text_bckg"></div>
+                            <div class="act-text">
+                                The Black-Black House<br><br>
+                                In one black-black city, there is a black-black house… The places we are raised in do not define us, but they set the scenes for our identities to unfold. Referencing the Russian children's horror folklore, Black-Black House is an investigation into the concept of place. How does space become a place? How does a nine-story building on the outskirts of St. Petersburg turn into a ‘haunted’ house? Using analytical drawing and associative collaging as a method, this project draws upon media theory, geography, mnemonic systems, and recollections.<br><br>
+                                Digital print on 70g paper,<br>
+                                lighbox: LED panel and wood.<br><br>
+                                Special thanks to Linda van Deursen and Federico Campagna.<br><br>
+                                Installation photography by Marcin Liminowicz and Roel Backaert.
+                            </div>
+                            <div class="back">&#8626;</div>
+                              <div class="show_text">about</div>
               </div>  
 
               <div class="pr-box" id="pr-undes">
-                          <div class="act-text">
-                                The Undesirables<br><br>
-                                <i>The Undesirables</i> is a story about the resistance between the Station and the unwanted
-                                spirits which has been going on for almost 200 years. It is based on the historical research
-                                of the Utrecht Central Station from the moment of its creation in 1843, when it was built on
-                                the place of a small cemetery for criminals.<br>
-                                <i>The Undesirables</i> is a metaphor, used to show how privatisation and securitisation of
-                                public spaces change their political meaning and turn them into ‘non-places’,
-                                where the entrance is not by right, but by permission. They have a departicularized
-                                character, that looks very much alike and pretends to be public. On one hand current
-                                solution (‘supervision and enforcement’) is aiming to make the urban environment safe,
-                                but on the other, it’s turning it into a space of increasing discrimination, where every
-                                individual is treated as a customer and at the same time–potential criminal.<br>
-                                Video installation consists of main projection, supported by a voiceover and two small
-                                screens. The main video displays a partially fictional narrative, following the timeline
-                                of real events. The scaffolding skeleton, which holds the 3-dimentional collage, combining
-                                images of architecture of the station from different periods of time, capture a building
-                                in constant flux, creating a landscape of failed attempts to resist the undesirables.<br>
-                                The two additional small screens show archival images and real facts, on which the story
-                                is based on. <br><br>
-                                video + sound installation. 10 min.<br><br>
-                                Exhibited at:<br>
-                                <a class="d-links" href="http://2018.manifestations.nl/en/portfolio/taisiia-reshetnik-the-undesirables/">Manifestations, Dutch Design Week/ Veemgebouw, <br>Eindhoven (20 OCT&mdash;28 OCT 2018)<br>
-                                <a class="d-links" href="http://www.gd18.care/">Graphic Design Graduation Show 2018/
-                                Royal Academy of Art, <br>The Hague (06 JUL&mdash;12 JUN 2018)</a><br><br>
-                                <a class="d-links" href="https://www.kabk.nl/en/alumni-profiles/taisiia-reshetnik">Graphic Design Department Award</a><br><br>
-                                Supervised by:<br> Thomas Buxó<br>Agata Jaworska<br>Roosje Klap<br>Niels Schrader<br><br>
-                                Credits:<br>Jan Egbers<br>Leith Benkhedda<br>Ruben Pater<br>Ernie Mellegers<br>Kevin Bray<br>Jakob Schlötter<br><br>Arjan den Boer<br>Agnes Algera<br>Jan-Willem Oudhof<br>Maša Galič<br><br><br>
-                          </div>   
-                                  <div class="image-container">
-                                      <video controls class="image-hor-video videoContainer">
-                                        <source src="images/undes/undes_video.mp4" type="video/mp4">
-                                      </video> 
-                                    <div class="image-hor"><img src="images/undes/instal_01.jpg"></div>
-                                    <div class="image-ver"><img src="images/undes/instal_05.png"></div>
-                                    <div class="image-ver"><img src="images/undes/instal_03.png"></div>
-                                    <div class="image-hor"><img src="images/undes/instal_02.jpg"></div>
-                                    <div class="image-ver"><img src="images/undes/img_01.png"></div>
-                                    <div class="image-ver"><img src="images/undes/img_03.png"></div>
-                                    <div class="image-ver"><img src="images/undes/img_02.png"></div>
-                                    <div class="image-ver"><img src="images/undes/img_04.png"></div>
-                                    
-                                  </div>  
-                        <div class="back">&#8626;</div>   
-                        <div class="show_text">about</div>  
-                  </div>
+                <div class="image-container">
+                    <video controls class="image-hor-video videoContainer">
+                      <source src="images/undes/undes_video.mp4" type="video/mp4">
+                    </video> 
+                  <div class="image-hor"><img src="images/undes/instal_01.jpg"></div>
+                  <div class="image-ver"><img src="images/undes/instal_05.png"></div>
+                  <div class="image-ver"><img src="images/undes/instal_03.png"></div>
+                  <div class="image-hor"><img src="images/undes/instal_02.jpg"></div>
+                  <div class="image-ver"><img src="images/undes/img_01.png"></div>
+                  <div class="image-ver"><img src="images/undes/img_03.png"></div>
+                  <div class="image-ver"><img src="images/undes/img_02.png"></div>
+                  <div class="image-ver"><img src="images/undes/img_04.png"></div>
+                </div>
+                <div class="text_bckg"></div>
+                    <div class="act-text">
+                          The Undesirables<br><br>
+                          'The Undesirables' is a story about the resistance between the Station and the unwanted spirits which has been going on for almost 200 years. It is based on the historical research of the Utrecht Central Station from the moment of its creation in 1843, when it was built on the place of a small cemetery for criminals.<br>
+                          'The Undesirables' is a metaphor, used to show how privatisation and securitisation of public spaces change their political meaning and turn them into ‘non-places’, where the entrance is not by right, but by permission. They have a departicularized character, that looks very much alike and pretends to be public. On one hand current solution (‘supervision and enforcement’) is aiming to make the urban environment safe, but on the other, it’s turning it into a space of increasing discrimination, where every individual is treated as a customer and at the same time–potential criminal.<br> Video installation consists of main projection, supported by a voiceover and two small screens. The main video displays a partially fictional narrative, following the timeline of real events. The scaffolding skeleton, which holds the 3-dimentional collage, combining images of architecture of the station from different periods of time, capture a building in constant flux, creating a landscape of failed attempts to resist the undesirables.<br> The two additional small screens show archival images and real facts, on which the story
+                          is based on. <br><br>
+                          Video installation, 10 min<br><br>
+                          Graphic Design Department Award<br><br>
+                          Supervised by Thomas Buxó and Agata Jaworska.<br>
+                          Special thanks to Roosje Klap and Niels Schrader.<br>
+                          Credits: Jan Egbers, Arjan den Boer, Ernie Mellegers, Jan-Willem Oudhof, Maša Galič, Kevin Bray, Agnes Algera, Leith Benkhedda, Ruben Pater, Jakob Schlötter.
+                    </div>     
+                  <div class="back">&#8626;</div>   
+                  <div class="show_text">about</div>  
+                </div>
 
                   <div class="pr-box" id="pr-bino">
+                    <div class="image-container">
+                        <video class="image-hor-video videoContainer" autoplay loop>
+                            <source src="images/bino/video_01.mp4" type="video/mp4">
+                          </video>
+                        <div class="image-ver"><img src="images/bino/01.png"></div>
+                        <div class="image-ver"><img src="images/bino/02.png"></div>
+                        <div class="image-ver"><img src="images/bino/03.png"></div>
+                        <div class="image-ver"><img src="images/bino/04.png"></div>
+                    </div>
+                        <div class="text_bckg"></div>
                           <div class="act-text">
                               Identity design for 'Binominale'<br><br>
                               Binominale is a curatorial project by Swiss multidisciplinary studio Fragmentin.
-                              <a href="https://binominale.art/">binominale.art</a><br><br>
-                              Website development by ...<br><br>
-                              Identity and website design in collaboration with:<br>
-                              Pablo Perez<br>
-                              Fragmentin<br><br> 
+                              <a style="text-decoration: underline;" target="_blank" 
+                              href="https://binominale.art/">binominale.art</a><br><br>
+                              Identity and website design in collaboration with Pablo Perez and Fragmentin.<br>
+                              Website development by INT studio. 
                           </div>
-                              <div class="image-container">
-                                  <div class="image-hor"><img src="images/bino/img_2.png"></div>
-                                  <div class="image-hor"><img src="images/bino/img_3.png"></div>
-                                  <div class="image-hor"><img src="images/bino/img_4.png"></div>
-                              </div>
                                   <div class="back"><span>&#8626;</span></div>
                                   <div class="show_text">about</div>
                   </div> 
 
                   <div class="pr-box" id="pr-who">
-                  <div class="act-text">
-                      Identity for 'Who Speaks?' Symposium on AI, Language and Democracy<br><br>
-                      “‘Who Speaks?’ tackles major issues including politics as a rhetorical gesture, law as an
-                      act of speech and aesthetics as a language of imagination. It aims to bring together academic researchers, non-profit activists, and public services such as Bits of Freedom and the Analysis and Research Department (DAO) of the Dutch Parliament, for joint knowledge exchange and discussion on AI driven democracy, language and decision-making. DAO provides substantive support to parliamentary investigations and gives advice to the Dutch Members of Parliament on information relevant to the parliamentary process”.<br>
-                      In collaboration with the co-head of the department Niels Schrader and Pablo Perez, we developed an animated typographic identity for the symposium. The design choices were derived from the language and algorithm-based focus of the event.
-                      <br><br>
-                      Client: MA Non Linear Narrative, Royal Academy of Art, The Hague.<br>
-                      Designed in collaboration with Pablo Perez and Niels Schrader.<br>
-                      Web design and development by by Rectangle.<br>
-                      <a style="text-decoration: underline;" target="_blank" htref="https://whospeaks.eu">who-speaks.eu</a><br>
-                      2019
-                  </div>
-                      <div class="image-container">
-                  
+                    <div class="image-container">
                           <video class="image-ver-three phone" autoplay loop>
                             <source src="images/who/comp_1.mp4" type="video/mp4">
                           </video>
@@ -450,17 +438,25 @@ $(document).ready(function(){
                             <source src="images/who/poster_video.mp4" type="video/mp4">
                           </video>
                       </div>
+                    <div class="text_bckg"></div>
+                      <div class="act-text">
+                          Identity for 'Who Speaks?' Symposium on AI, Language and Democracy<br><br>
+                          “‘Who Speaks?’ tackles major issues including politics as a rhetorical gesture, law as an
+                          act of speech and aesthetics as a language of imagination. It aims to bring together academic researchers, non-profit activists, and public services such as Bits of Freedom and the Analysis and Research Department (DAO) of the Dutch Parliament, for joint knowledge exchange and discussion on AI driven democracy, language and decision-making. DAO provides substantive support to parliamentary investigations and gives advice to the Dutch Members of Parliament on information relevant to the parliamentary process”.<br>
+                          In collaboration with the co-head of the department Niels Schrader and Pablo Perez, we developed an animated typographic identity for the symposium. The design choices were derived from the language and algorithm-based focus of the event.
+                          <br><br>
+                          For MA Non Linear Narrative, Royal Academy of Art, The Hague.<br>
+                          Designed in collaboration with Pablo Perez and Niels Schrader.<br>
+                          Web design and development by Rectangle.<br>
+                          <a style="text-decoration: underline;" target="_blank" htref="https://whospeaks.eu">who-speaks.eu</a><br>
+                          2019
+                      </div>
                           <div class="back">&#8626;</div>
                           <div class="show_text">about</div>
               </div>  
 
                   <div class="pr-box" id="pr-valk">
-                          <div class="act-text">
-                              Annual report for 'Het Valkhof-Kam Museum'<br>
-                              museum of art and archeology in Nijmegen, NL.<br>
-                              Representatives of the museum of archaeology and art Het Valkhof-Kam approached me with an idea to change their approach in designing their annual report. Since the report is focused on the work done the previous year, this project puts the names of the people ‘behind the scenes’ on the front. The report shows information about the past exhibitions, but also reveals photographs from the process of their creation, paying tribute to the museum employees and their efforts.
-                          </div>
-                              <div class="image-container">
+                    <div class="image-container">
                                   <div class="image-hor"><img src="images/valk/img_1.png"></div>
                                   <div class="image-ver"><img src="images/valk/02.png"></div>
                                   <div class="image-ver"><img src="images/valk/03.png"></div>
@@ -484,11 +480,18 @@ $(document).ready(function(){
                                   <div class="image-ver"><img src="images/valk/21.png"></div>
                                   <div class="image-ver"><img src="images/valk/22.png"></div>
                               </div>
+                    <div class="text_bckg"></div>
+                          <div class="act-text">
+                              Annual report for 'Het Valkhof-Kam Museum'<br>
+                              museum of art and archeology in Nijmegen, NL.<br>
+                              Representatives of the museum of archaeology and art Het Valkhof-Kam approached me with an idea to change their approach in designing their annual report. Since the report is focused on the work done the previous year, this project puts the names of the people ‘behind the scenes’ on the front. The report shows information about the past exhibitions, but also reveals photographs from the process of their creation, paying tribute to the museum employees and their efforts.
+                          </div>
                                   <div class="back"><span>&#8626;</span></div>
                                   <div class="show_text">about</div>
                   </div>  
 
                   <div class="pr-box" id="pr-yvonne">
+                    <div class="text_bckg"></div>
                           <div class="act-text">
                               87 Days<br>
                               In 1967 Yvonne Paul, a Dutch citizen of Armenian descent, was deported from the USA after 9 years of living there, under mysterious circumstances. From the information available to us now, it seems that the reason behind the deporation was the lack of the valid residence permit, as well as some kind of suspicion of the mental illness: she was handcuffed to an airplane seat. Upon arrival to Amsterdam airport, Schiphol, Yvonne was examined by local psychiatrists who determined that there was nothing wrong with her. She refused to leave the airport, presumably hoping to get a permission to get back to the US. It is unclear what was exacty the moivation behind her decisions, but eventually Yvonne spent 87 days, almost 3 months in total at the airport, sleeping on the coach in the waiting room.  <br>
@@ -506,6 +509,7 @@ $(document).ready(function(){
           
 
             <div class="pr-box" id="pr-roba">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Map for Expo: Six Degrees of Separation<br><br>
                     ''Six Degrees of Separation' is a collaborative exhibition project between the Non Linear Narrative master programme of the Royal Academy of Art, The Hague, the Archaeology Department of the Municipality of The Hague and the ‘Rotterdamsebaan’ major road project. The project offered students direct access to archaeological remains found on the Rotterdamsebaan tunnel excavation site, in order to re-contextualize these human artefacts and link them to contemporary issues affecting the City of The Hague today. The project resulted in a public exhibition at De Besturing in The Hague that explores new narratives of land speculation, property development, migration and endangered craftsmanship.'<br>
@@ -532,6 +536,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-synth">
+              <div class="text_bckg"></div>
                     <div class="act-text">    
                     Synthesis: About Forms, Lines & Feelings<br><br>
                     <i>Synthesis</i> is a project by a Moscow-based photographer Lora Bergen. Together with two other image-makers we contributed to her project about movement and time. This serie of collages is my input.<br>
@@ -554,6 +559,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-gdgs">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Graphic Design Graduation Show 2018<br><br>
                     Cleansed, peeled, liberated.<br>The Graphic Design Class of 2018 is
@@ -582,6 +588,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-dp">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     DOG & PONY SHOW<br><br>
                     Identity for the annual Dog&Pony Show,
@@ -600,6 +607,7 @@ $(document).ready(function(){
               
         
             <div class="pr-box" id="pr-inout">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Inside/Out<br><br>
                     <i>Inside/Out</i> is a series of works for the exhibition <i>Sexy Times</i> which
@@ -645,6 +653,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-eucoh">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     EU Coherence<br><br>
                     Within the modern concept of citizenship it is hard to
@@ -688,6 +697,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-bddb">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Best Dutch Book Designs 2016, Student Selection Catalogue<br><br>
                     The design of this catalogue is a reflection on the selection made
@@ -713,6 +723,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-glob">
+              <div class="text_bckg"></div>
               <div class="act-text">
                     Globalizing Intimacy<br><br>
                     Internet, as a disembodied form of communication often assumed to be impersonal and untrustworthy.
@@ -734,6 +745,7 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-let">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Let Me Tell You About...<br><br>
                     During my internship at Kummer & Herrman we faced a challange of organizing an exhibition for young artists of a third year
@@ -757,33 +769,54 @@ $(document).ready(function(){
             </div>
 
              <div class="pr-box" id="pr-skim">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     I Skim It<br><br>
-                    Description
+                    more info coming soon
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
             </div>
 
             <div class="pr-box" id="pr-gesture">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Gesture<br><br>
-                    Description
+                    more info coming soon
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
             </div>
 
             <div class="pr-box" id="pr-glob">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Globalizing Intimacy<br><br>
-                    Description
+                    more info coming soon
+                  </div>
+                  <div class="back"><span>&#8626;</span></div>
+                  <div class="show_text">about</div>
+            </div>
+
+            <div class="pr-box" id="pr-illustr">
+              <div class="image-container">
+                      <div class="image-hor"><img src="images/guess/01.png">A4 and A3 riso print</div>
+                      <div class="image-ver"><img src="images/stairs/01.png">A4 riso print</div>
+                  </div>
+              <div class="text_bckg"></div>
+                    <div class="act-text">
+                    Illustrations<br><br>
+
+                    Riso prints and digital drawings in various sizes.<br>
+                    If you are interested in purchasing, please send an email to taya@studio2992.nl<br><br>
+                    more info coming soon
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
             </div>
 
             <div class="pr-box" id="pr-info">
+              <div class="text_bckg"></div>
                     <div class="act-text">
                     Studio2992 is a multidisciplinary design studio run by Taya Reshetnik. It specialises on research-based visual and spatial storytelling about human experience in urban environment. focuses on specialising on Autonomous projects ... Projects vary from publications to video installations, graphic elements for spatial narration ... circulate around the concept of space, place and touch upon subjects of privatisation of public spaces and preservation of collective memory. Her approach materialises in a form of an assemblage of found and self-produced imagery.
                   </div>
@@ -809,6 +842,7 @@ $(document).ready(function(){
       <div class="tag" id="visual">visual identity</div>
       <div class="tag" id="exhibition">expo design</div>
       <div class="tag" id="webdesign">web design</div>
+      <div class="tag" id="illustration">illustration</div>
     </div>
 
     <div class="about-container">
