@@ -75,8 +75,13 @@ body {
     display: none;
   }
 
+  .text_bckg{
+    display: none;
+  }
+
   .act-text{
     display: block;
+    padding-top: 0px;
     width: 30%;
     height: 90.2%;
   }
@@ -146,12 +151,23 @@ body {
     display: block;
   }
 
+  .text_bckg{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d2691e;
+    opacity: 0.8;
+  }
+
   .act-text{
     display: none;
+    padding-top: 38px;
+    padding-left: 8px;
+    padding-right: 8px;
     width: 100%;
     height: 90%;
     z-index: 100;
-    /*background-color: blue;*/
   }
 }
 
@@ -248,9 +264,6 @@ img {
 
 .act-text {
   position: absolute;
-  /*column-count: 2;*/
-  /*width: 30%;
-  height: 90.2%;*/
   color: black;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -304,7 +317,7 @@ img {
   width: 87px;
 }
 
-.hello { 
+/*.hello { 
   display: none;
   background-color: white;
   color: black;
@@ -315,7 +328,7 @@ img {
   left: 0%; top: 30%;
   width: 100%; height:100%;
   overflow: scroll;
-}
+}*/
 
 .menu-text{
   font-size: 15px;
@@ -444,6 +457,8 @@ a:hover {color:black; background-color: #FF6700; text-decoration: underline;}
   border: 1px solid black;
   border-radius: 5px;
   padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .back:hover{cursor: pointer; color: white;}
