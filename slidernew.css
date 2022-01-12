@@ -452,8 +452,8 @@ a:hover {color:black; background-color: #FF6700; text-decoration: underline;}
   bottom: 18px;
   left: 18px;
   margin: auto;
-  color: black;
-  background-color: #d2691e;
+  color: #d2691e;
+  background-color: black;
   border: 1px solid black;
   border-radius: 5px;
   padding: 2px;
@@ -461,7 +461,7 @@ a:hover {color:black; background-color: #FF6700; text-decoration: underline;}
   padding-right: 4px;
 }
 
-.back:hover{cursor: pointer; color: white;}
+.back:hover{cursor: pointer; background-color: #d2691e; color: black;}
 
 .show_text{
   position: fixed; 

@@ -158,9 +158,10 @@ $(document).ready(function(){
 
                             $(".back").click(function () {
                                     $(".project-grid").removeClass("blur");
+                                    $(".image-container, .act-text").scrollTop(0);
+                                    $(".videoContainer")[0].pause();
                                     $(".windowcontainer").fadeOut("slow");
                                     $(".pr-box").css("display","none");
-                                    $(".videoContainer")[0].pause();
                                     $(".tag-container").fadeIn("slow");
                                     $(".about-container").fadeIn("slow");
                                     // $(".act-text").fadeOut("slow");
@@ -225,6 +226,25 @@ $(document).ready(function(){
 
 </script>
 
+<!-- <script>
+var mybutton = document.getElementByClass("back");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> -->
+
 </head>
 
 <body>
@@ -276,7 +296,7 @@ $(document).ready(function(){
                 <div class="titel">&nbsp;&rarr;&thinsp;Browsing Through the Book</div></div>
 
               <div class='project-grid-item all_tag auto_tag print_tag' id="skim">  
-                <img class="menuimg" src="images/skim/spr_4.png">     
+                <img class="menuimg" src="images/skim/cover.png">     
                 <div class="titel">&nbsp;I Skim It</div></div>
 
               <div class='project-grid-item all_tag instal_tag print_tag com_tag' id="gesture">
@@ -304,7 +324,7 @@ $(document).ready(function(){
                 <div class="titel">&nbsp;&rarr;&thinsp;Globalizing Intimacy</div></div>
 
               <div class='project-grid-item all_tag illustr_tag auto_tag print_tag'  id="illustrmenu">
-                <img class="menuimg" src="images/guess/01.png">
+                <img class="menuimg" src="images/illustrations/tower.png">
                 <div class="titel">&nbsp;&rarr;&thinsp;Illustrations</div></div>
 
       </div>
@@ -339,7 +359,7 @@ $(document).ready(function(){
                                 Digital print on 70g paper,<br>
                                 lighbox: LED panel and wood.<br><br>
                                 Special thanks to Linda van Deursen and Federico Campagna.<br><br>
-                                Installation photography by Marcin Liminowicz and Roel Backaert.<br>
+                                Installation photography by Marcin Liminowicz and Roel Backaert.<br><br>
                                 2021
                             </div>
                             <div class="back">&#8626;</div>
@@ -370,7 +390,7 @@ $(document).ready(function(){
                           Graphic Design Department Award<br><br>
                           Supervised by Thomas Buxó and Agata Jaworska.<br>
                           Special thanks to Roosje Klap and Niels Schrader.<br>
-                          Credits: Jan Egbers, Arjan den Boer, Ernie Mellegers, Jan-Willem Oudhof, Maša Galič, Kevin Bray, Agnes Algera, Leith Benkhedda, Ruben Pater, Jakob Schlötter.<br>
+                          Credits: Jan Egbers, Arjan den Boer, Ernie Mellegers, Jan-Willem Oudhof, Maša Galič, Kevin Bray, Agnes Algera, Leith Benkhedda, Ruben Pater, Jakob Schlötter.<br><br>
                           2018
                     </div>     
                   <div class="back">&#8626;</div>   
@@ -394,7 +414,7 @@ $(document).ready(function(){
                               More information on: <a style="text-decoration: underline;" target="_blank" 
                               href="https://binominale.art/">binominale.art</a><br><br>
                               Identity and website design in collaboration with Pablo Perez and Fragmentin.<br>
-                              Website development by INT studio. <br>
+                              Website development by INT studio. <br><br>
                               2021
                           </div>
                                   <div class="back"><span>&#8626;</span></div>
@@ -440,7 +460,7 @@ $(document).ready(function(){
                           For MA Non Linear Narrative, Royal Academy of Art, The Hague.<br>
                           Designed in collaboration with Pablo Perez and Niels Schrader.<br>
                           Web design and development by Rectangle.<br>
-                          <a style="text-decoration: underline;" target="_blank" htref="https://whospeaks.eu">who-speaks.eu</a><br>
+                          <a style="text-decoration: underline;" target="_blank" htref="https://whospeaks.eu">who-speaks.eu</a><br><br>
                           2019
                       </div>
                           <div class="back">&#8626;</div>
@@ -505,7 +525,8 @@ $(document).ready(function(){
                           <div class="act-text">
                               87 Days<br><br>
                               In 1967 Yvonne Paul, a Dutch citizen of Armenian descent, was deported from the USA under mysterious circumstances after nine years of living there. From the information available to us now, it seems that the reason behind the deporation was the lack of the valid residence permit. Upon arrival to Schiphol airport in Amsterdam, she refused to leave, presumably hoping to get a permission to get back to the US. Yvonne spent 87 days, almost 3 months in total at the airport, sleeping on the coach in the waiting area. <br> '87 days' is an ongoing research project, looking into the evolution of public space. This publication is a first step into the investigation.
-                              By looking at the selection of archieval imagery of this event and categorizing it according to various perspectives (media, authority, observers), this book is a visual non-linear subjective investigation into the Yvonne's world throughout these 87 days at Schiphol.
+                              By looking at the selection of archieval imagery of this event and categorizing it according to various perspectives (media, authority, observers), this book is a visual non-linear subjective investigation into the Yvonne's world throughout these 87 days at Schiphol.<br><br>
+                              2019
                           </div>
                                   <div class="back"><span>&#8626;</span></div>
                                   <div class="show_text">about</div>
@@ -521,7 +542,8 @@ $(document).ready(function(){
                     
                     Designed in collaboration with Natalia Sliwinska and Lance Laoyan.<br>
                     Supervised by Lauren Alexander and Niels Schrader.<br>
-                    Exhibition photography by Boel Backaert and Frank Jansen.<br>
+                    Exhibition photography by Boel Backaert and Frank Jansen.<br><br>
+                    2019
                   </div>
                   <div class="image-container">
                       <div class="image-ver"><img src="images/roba/roba_10.jpg"></div>
@@ -540,11 +562,17 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-synth">
+              <div class="image-container">
+                  <div class="image-hor"><img src="images/synth/synth_2.1.jpg"></div>
+                  <div class="image-hor"><img src="images/synth/synth_2.2.jpg"></div>
+                  <div class="image-hor"><img src="images/synth/synth_2.3.jpg"></div>
+                  <div class="image-hor"><img src="images/synth/synth_2.4.jpg"></div>
+                  <div class="image-hor"><img src="images/synth/synth_2.5.jpg"></div>
+              </div>
               <div class="text_bckg"></div>
                     <div class="act-text">    
                     Synthesis: About Forms, Lines & Feelings<br><br>
-                    <i>Synthesis</i> is a project by a Moscow-based photographer Lora Bergen. Together with two other image-makers we contributed to her project about movement and time. This serie of collages is my input.<br>
-                    The same way as deconstruction is a way of understanding the relationship between text and meaning—collage is
+                    <a style="text-decoration: underline;" target="_blank" href="https://www.behance.net/gallery/74269391/Synthesis">'Synthesis'</a> is a project by a Moscow-based photographer Lora Bergen. Together with two other image-makers we contributed to her project about movement and time. This serie of collages is my input.<br> The same way as deconstruction is a way of understanding the relationship between text and meaning—collage is
                     aiming to do the same but through visual means. The intricate, but at the same time intriguing part about this serie,
                     is its starting point—the black and white photographs capturing an unstable moment during the dance performance,
                     influencing the uncertain direction from its very beginning. The dance itself is influenced by another ever
@@ -554,8 +582,7 @@ $(document).ready(function(){
                     them back together in a different manner. It is my take on reflecting on the whole process. Perhaps looking at these
                     elements in a rearrangement and a new context will give a new insight.
                     <br><br>
-                    <a href="https://www.behance.net/gallery/74269391/Synthesis">Synthesis by Lora Bergen (full project)</a><br><br>
-                    risoprint<br>
+                    Risoprint A3<br><br>
                     2019<br>
                   </div>
                   <div class="back"><span>&#8626;</span></div>
@@ -563,10 +590,20 @@ $(document).ready(function(){
             </div>
 
             <div class="pr-box" id="pr-gdgs">
+              <div class="image-container">
+                  <div class="image-ver-three"><img src="images/gdgs/poster_1.png"></div>
+                  <div class="image-ver-three"><img src="images/gdgs/poster_2.png"></div>
+                  <div class="image-ver-three"><img src="images/gdgs/poster_3.png"></div>
+                  <div class="image-hor"><img src="images/gdgs/banner_2.png"></div>
+                  <div class="image-hor"><img src="images/gdgs/pattern_1.1.png"></div>
+                  <div class="image-hor"><img src="images/gdgs/pattern_2.1.png"></div>
+                  <div class="image-hor"><img src="images/gdgs/web_01.png"></div>    
+              </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     Graphic Design Graduation Show 2018<br><br>
-                    Cleansed, peeled, liberated.<br>The Graphic Design Class of 2018 is
+                    Cleansed, peeled, liberated. <a style="text-decoration: underline;" target="_blank" 
+                    href="http://gd18.care/">The Graphic Design Class of 2018</a> is
                     leaving and is saying their goodbyes, but not before commenting on the
                     state of affairs one last time. Surrounded by pre-packaged, fast-food-visual-language,
                     authenticity is hard to come by. It becomes slippery like a piece of scented soap.
@@ -577,33 +614,28 @@ $(document).ready(function(){
                     Time to actualise! This is supposed to be a cleansing of sorts.<br>
                     A ritual. Or is it an exorcism?<br><br>
 
-                    <a href="http://gd18.care/">website >>></a><br><br>
-                    IN COLLABORATION WITH:<br>
-                    <a class="d-links" href="http://asuk.work/">Asya Sukhorukova</a><br>
-                    <a class="d-links" href="http://lukasengelhardt.net/work/">Lukas Engelhart</a><br>
-                    <a class="d-links" href="http://carmendusmet.com/">Carmen Dusmet Carasco</a><br>
-                    <a class="d-links" href="http://www.norabekes.nl/">Nora Bekes</a><br>
-                    <a class="d-links" href="http://www.linven.nl/">Lin Ven</a><br>
-                    <a class="d-links" href="http://jonathanhielkema.nl">Photography by: EKOC Productions</a><br><br>
-                    SUPERVISED BY:<br>Roosje Klap<br>Agata Jaworska<br>Ewoud Traast<br><br>
+                    Concept and design in collaboration with Asya Sukhorukova, Lukas Engelhart, Carmen Dusmet Carasco, Nora Bekes and Lin Ven.<br>
+                    Photography by EKOC Productions.
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
             </div>
 
             <div class="pr-box" id="pr-dp">
+              <div class="image-container">
+                  <div class="image-hor"><img src="images/dp/1.1.png"></div>
+                  <div class="image-ver"><img src="images/dp/insta_01.png"></div>
+                  <div class="image-ver"><img src="images/dp/insta_02.png"></div>
+              </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
-                    DOG & PONY SHOW<br><br>
-                    Identity for the annual Dog&Pony Show,
-                    presentation of first graduation project ideas by Graphic Design students at KABK.<br>
-                    35 students, 3.33 minutes and 20 slides each.
+                    Dog & Pony Show Posters<br><br>
+                    Posters for the annual Dog & Pony Show, presentation of first graduation project ideas by Graphic Design BA students at KABK.<br>
                     <br><br>
-                    Silkscreen print on matt, glossy paper and fabric.<br><br>
-                    IN COLLABORATION WITH:<br>
-                    <a class="d-links" href="http://asuk.work/">Asya Sukhorukova</a><br><br><br>
-                    SUPERVISED BY:<br>
-                    Michel Hoogervorst<br><br>
+                    Silkscreen print on matt and glossy paper.<br>
+                    
+                    Concept and design in collaboration with Asya Sukhorukova.<br><br>
+                    2018
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
@@ -611,46 +643,29 @@ $(document).ready(function(){
               
         
             <div class="pr-box" id="pr-inout">
+              <div class="image-container">
+                <div class="image-hor"><img src="images/inout/1.jpg"></div>
+                <div class="image-hor"><img src="images/inout/2.jpg"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.1.png"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.2.png"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.3.png"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.4.png"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.5.png"></div>
+                <div class="image-ver"><img src="images/inout/inout_print_1.6.png"></div>
+              </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     Inside/Out<br><br>
-                    <i>Inside/Out</i> is a series of works for the exhibition <i>Sexy Times</i> which
-                    includes a booklet, poem and an installation.<br><br>
-                    The booklet is an associative collage, forming a narrative about the
-                    <i>inner</i> egoistic self and the <i>outer</i> other, about the relationship between the two.<br><br>
-                    The interactive installation is a continuation of the same narrative, brought into the
-                    physical 3-dimensional space.<br>
-                    In order to activate the installation two individuals have to make a physical contact.<br>
-
-                    'Exhibition and party by graphic design students of the Royal Academy of Arts, The Hague (KABK) at the new society for the arts in Amsterdam: SEXYLAND!
-                    From Foucault to Beyoncé, mankind has long harbored an obsession with sexuality and the psychological mechanics surrounding them.
-                    Lust is such an individual experience that it gives free range to creatives looking to produce something erotic, playing as they can with personal predilections,
-                    implicit and/or explicit ideas about what do we see, or rather: what do we want to see?<br>
-                    With PlayLab, an elective at the Royal Academy of Arts The Hague, focusing on artistic research, we examined a series of subjects around the topic of
-                    sexuality and our shifting relationship by asserting new attitudes and perspectives towards sex. The stories that are written
-                    challenge traditional visions and divisions between humans, nature and technology'.
-                    <br><br>
-                    Publication: risoprint<br>
-                    Installation: Arduino + processing<br><br>
-                    CONCEPT, DESIGN, POETRY, VIDEO EDITING:<br>
-                    Taya Reshetnik<br>
-                    Raphaël Maman<br><br>
-                    FILMING:<br>
-                    <a class="d-links" href="http://jonathanhielkema.nl/">Jonathan Hielkema</a><br><br>
-                    SOUND:
-                    <a class="d-links" href="http://www.jaapsmit.nl/">Jaap Smit</a>
-                    <a class="d-links" href="https://soundcloud.com/jaap_smit">+soundcloud</a><br><br>
-                    SPECIAL THANKS TO:<br>
-                    <a class="d-links" href="https://www.youtube.com/channel/UCafxR2HWJRmMfSdyZXvZMTw">LOOK MUM NO COMPUTER</a><br>
-                    <a class="d-links" href="https://www.rebeccarui.com/">Rebecca Rui</a><br><br>
-                    SUPERVISED BY:<br>
-                    Kees van Drongelen<br>
-                    Roosje Klap<br>
-                    Job Wouters<br>
-                    Christien Bax<br><br>
-                    EXHIBITED AT:<br>
-                    <a class="d-links" href="https://www.facebook.com/events/sexy-times-at-sexyland/151312638685569/">Sexy Times/ Sociëteit SEXYLAND, Amsterdam (14&mdash;15 OCT 2017)</a><br>
-                    Open Day/ Royal Academy Of Art, the Hague (28 JAN 2017)
+                    'Inside/Out' is a series of works for the exhibition 'Sexy Times' which
+                    includes a booklet, poem and an installation. The booklet is an associative collage, forming a narrative about the inner egoistic self and the outer other, about the relationship between the two. The interactive installation is a continuation of the same narrative, brought into the
+                    physical three dimensional-space. In order to activate the installation two individuals have to make a physical contact.<br><br>
+                    Publication: risoprint A4<br>
+                    Installation: Arduino + Processing<br><br>
+                    Concept, design, poetry, video editing in collaboration with Raphaël Maman.<br>
+                    Filming by Jonathan Hielkema.<br>
+                    Sound by Jaap Smit.<br>
+                    Credits: LOOK MUM NO COMPUTER, Rebecca Rui.
+                    Supervised by Kees van Drongelen, Roosje Klap, Job Wouters.<br>
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
@@ -703,7 +718,8 @@ $(document).ready(function(){
                     by Monica Brito Vieira and Flippe Carreira da Silva.<br><br>
                     Publication: laser print, 247p; flags: print on fabric.<br><br>
                     Design and concept in collaboration with Theresa Scherrer. <br>
-                    Supervised by Niels Schrader and Lauren Alexander.
+                    Supervised by Niels Schrader and Lauren Alexander.<br><br>
+                    2017
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
@@ -712,10 +728,8 @@ $(document).ready(function(){
             <div class="pr-box" id="pr-bddb">
               <div class="image-container">
                       <div class="image-ver"><img src="images/bddb/zoom_03.png"></div>
-                      
                       <div class="image-ver"><img src="images/bddb/zoom_02.png"></div>
                       <div class="image-ver"><img src="images/bddb/zoom_01.png"></div>
-                      
                       <div class="image-ver"><img src="images/bddb/zoom_04.png"></div>
                       <div class="image-ver"><img src="images/bddb/01.png"></div>
                       <div class="image-ver"><img src="images/bddb/02.png"></div>
@@ -740,7 +754,7 @@ $(document).ready(function(){
                     Exhibited at Best Dutch Book Designs 2016/ Stedelijk Museum, Amsterdam, 2017<br><br>
                     Design and concept in collaboration with  Daan Jesper Kars and Daniel Hernández. <br>
                     Supervised by Chantal Hendriksen and Gijsbert Dijker.<br>
-                    Offset printed at Drukkerij Tielen.<br>
+                    Offset printed at Drukkerij Tielen.<br><br>
                     2017
                   </div>
                   <div class="back"><span>&#8626;</span></div>
@@ -807,7 +821,7 @@ $(document).ready(function(){
                     facebook and other social media banners. Instagram became a platform for the audiotour (@let.me.tell.you.about) and documentation of the exhibition.
                     <br><br>
                     Exhibition participants: Nael Quraishi, Elodie Vreeburg, Viktor Naumovski, Katarina Juričić, Sophie Schwartz, Caspar von Eugen, Filippo Maria Ciriani, Daniela Roșca, Tibor Dieters, Avgud, Stella Loning, Linnea Frandsen.<br><br>
-                    Concept, exhibition design and identity by studio Kummer & Herrman.<br>
+                    Concept, exhibition design and identity by studio Kummer & Herrman.<br><br>
                     2017
                   </div>
                   <div class="back"><span>&#8626;</span></div>
@@ -815,20 +829,53 @@ $(document).ready(function(){
             </div>
 
              <div class="pr-box" id="pr-skim">
+              <div class="image-container">
+                      <div class="image-hor"><img src="images/skim/cover.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_1.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_2.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_3.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_4.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_5.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_6.png"></div>
+                      <div class="image-hor"><img src="images/skim/spr_7.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_8.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_9.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_10.png"></div>
+                      <div class="image-ver"><img src="images/skim/spr_11.png"></div>
+                  </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     I Skim It<br><br>
-                    more info coming soon
-                  </div>
+                    This publication is an experiment on visualising an article by Nicholas Carr 
+                    <a style="text-decoration: underline;" target="_blank" href="https://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/306868/">'Is Google Making Us Stupid?'</a>. The article is investigating reasons behind the struggle of reading long-form texts, and analysing how electronic methods of communication are connected to that problem. 
+                  While reading the article, I noticed a controversy. According to the author, when the content online is being 'injected' with hyperlinks, it contributes to the disruption of our attention and concentration. At the same time, the article itself was heavily loaded with links to different sources and in this way became a paradox in itself. In a way, it is a perfect example of a problem that it was talking about. The publication 'I Skim It' is a typographical experiment in visualizing the struggle of reading online. The enlarged text refers to the short attention span, and a stack of bookmarks (scrapped information from each of the hyperlinks) points to the interruptions and endless, dynamic flow of information.<br><br>
+                  2016
+
+                </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
             </div>
 
             <div class="pr-box" id="pr-gesture">
+                  <div class="image-container">
+                      <div class="image-ver"><img src="images/gesture/PP_grad_05.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_15.jpg"></div>
+                      <div class="image-hor"><img src="images/gesture/PP_grad_14.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_06.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_07.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_08.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_09.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_10.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_11.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_12.jpg"></div>
+                      <div class="image-ver"><img src="images/gesture/PP_grad_13.jpg"></div>
+                  </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     Gesture<br><br>
-                    more info coming soon
+                    'Anthropometry: The Ornament of Gesture' is a graduation project of multidisciplinary designer Petra Popangelova. For her work at the department of Interior Architecture and Furniture Design at KABK, she researched the history of the craft of spatial ornaments and its exceeding
+                    relation to human gestures in modern times. 'Gesture Legend' is a complementary booklet with infographics, explaining all the gestures used for creation of the installation. The leporello format was used in the performative way during the final presentation.<br><br>
+                    2019
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
@@ -846,16 +893,17 @@ $(document).ready(function(){
 
             <div class="pr-box" id="pr-illustr">
               <div class="image-container">
-                      <div class="image-hor"><img src="images/guess/01.png">A4 and A3 riso print</div>
-                      <div class="image-ver"><img src="images/stairs/01.png">A4 riso print</div>
+                      <div class="image-ver"><img src="images/illustrations/corner_print.png"></div>
+                      <div class="image-ver"><img src="images/illustrations/corner_digital.png"></div>
+                      <div class="image-ver"><img src="images/illustrations/tower.png"></div>
+                      <div class="image-hor"><img src="images/guess/01.png"></div>
                   </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     Illustrations<br><br>
 
-                    Riso prints and digital drawings in various sizes.<br>
-                    If you are interested in purchasing, please send an email to taya@studio2992.nl<br><br>
-                    more info coming soon
+                    Riso prints and digital drawings.<br>
+                    
                   </div>
                   <div class="back"><span>&#8626;</span></div>
                   <div class="show_text">about</div>
