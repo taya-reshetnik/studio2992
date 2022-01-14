@@ -8,59 +8,8 @@
   <link rel="icon" type="image/x-icon" src="images/favicon/favicon.png">
   <link rel='stylesheet' href='slidernew.css'/>
 
-<!-- <script type="text/javascript">
-  if (screen.width <= 500) {
-  document.location = "mobile/mobile.html";
-  }
-</script> -->
-
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
 
-<!-- SLIDER -->
-
-<!-- <script>
-function actuallySetWidth(){
-    $("#drawer-content").width("calc(" + $(window).width()/2 + "px - 0px)");
-}
-function setwidth(){
-
-  actuallySetWidth();
-
-  $("#drawer-content").css("margin-right",$("#drawer-content").width() * -1 );
-}
-
-function noscroll(){
-  $(".d-text").mouseover(function(){
-    $(this).css("overflow","scroll");
-  });
-  $(".image-container").mouseover(function(){
-    $(this).css("position","absolute");
-    $(".d-text").css("overflow","hidden");
-  });
-}
-
-window.onresize = function(event) {
-    actuallySetWidth();
-};
-
-$(document).ready(function(){
-    setwidth();
-    noscroll();
-    $(".project-grid-item").click(function(){
-    var expanded = false;
-        if (expanded = !expanded) {
-            $("#drawer-content").animate({ "margin-right":    0 },  "slow");
-        } else {
-            var w = $("#drawer-content").width();
-            $("#drawer-content").animate({ "margin-right": w * -1 }, "slow");
-        }
-              $(".hello").fadeOut(500);
-    });
-});
-</script> -->
-
-
-<!-- SHOW TEXT+IMAGES -->
 <script>
 
   $(document).ready(function(){
@@ -222,28 +171,15 @@ $(document).ready(function(){
                             $(".all_tag").css("display", "none");
                             $(".illustr_tag").css("display", "block");
                        });
-     });
 
+                    window.addEventListener("load",function() {
+                    setTimeout(function(){
+                        window.scrollTo(0, 1);
+                    }, 0);
+                });
+     });
 </script>
 
-<!-- <script>
-var mybutton = document.getElementByClass("back");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script> -->
 
 </head>
 
@@ -324,7 +260,7 @@ function topFunction() {
                 <div class="titel">&nbsp;&rarr;&thinsp;Globalizing Intimacy</div></div>
 
               <div class='project-grid-item all_tag illustr_tag auto_tag print_tag'  id="illustrmenu">
-                <img class="menuimg" src="images/illustrations/tower.png">
+                <img class="menuimg" src="images/illustrations/guess.png">
                 <div class="titel">&nbsp;&rarr;&thinsp;Illustrations</div></div>
 
       </div>
@@ -898,9 +834,7 @@ function topFunction() {
                       <div class="image-ver"><img src="images/illustrations/corner_print.png"></div>
                       <div class="image-ver"><img src="images/illustrations/corner_digital.png"></div>
                       <div class="image-ver"><img src="images/illustrations/tower.png"></div>
-                      <div class="image-ver"><img src="images/illustrations/tower.png"></div>
-<!--                       <div class="image-hor"><img src="images/guess/01.png"></div>
- -->                  </div>
+                  </div>
               <div class="text_bckg"></div>
                     <div class="act-text">
                     Illustrations<br><br>
@@ -914,11 +848,10 @@ function topFunction() {
 
             <div class="pr-box" id="pr-info">
               <div class="text_bckg"></div>
-                    <div class="act-text">
+                    <div class="act-text" id="information_studio">
                     Studio2992 is a multidisciplinary design studio run by Taya Reshetnik. It specialises on research-based visual and spatial storytelling about human experience in urban environment. <!-- focuses on specialising on Autonomous projects ... Projects vary from publications to video installations, graphic elements for spatial narration ... circulate around the concept of space, place and touch upon subjects of privatisation of public spaces and preservation of collective memory. Her approach materialises in a form of an assemblage of found and self-produced imagery. -->
                   </div>
                   <div class="back"><span>&#8626;</span></div>
-                  <div class="show_text">about</div>
             </div>
 
       </div>
@@ -945,9 +878,12 @@ function topFunction() {
     <div class="about-container">
       <div class="contact" id="info"><a class="top-links">info</a></div>
       <div class="contact"><a class="top-links" href="mailto:taya@studio2992.nl">e-mail</a></div>
-      <div class="contact"><a class="top-links" href="https:/wwww.instagram.com/taya.reshetnik/">IG</a></div>
-      <div class="contact"><a class="top-links" href="https://www.youtube.com/channel/UCVMQHDAAcR6S8Yb1RAccoOQ">YT</a></div>
-      <div class="contact"><a class="top-links" href="https://www.linkedin.com/in/taya-reshetnik/">LI</a></div>
+      <div class="contact"><a class="top-links" target="_blank" 
+                              href="https://www.instagram.com/taya.reshetnik/?hl=en">IG</a></div>
+      <div class="contact"><a class="top-links" target="_blank" 
+                              href="https://www.youtube.com/channel/UCVMQHDAAcR6S8Yb1RAccoOQ">YT</a></div>
+      <div class="contact"><a class="top-links" target="_blank"
+                              href="https://www.linkedin.com/in/taya-reshetnik/">LI</a></div>
     </div>
 
   <div class="about-logo">
