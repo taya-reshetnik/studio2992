@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="style_six_degrees_of_separation.css"/>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<title>2992</title>
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/01.png" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/02.png" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/03.png" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/04.png" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/05.jpg" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/06.jpg" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7/15</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/07.png" style="height:80%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                    height:92vh; padding-top: 40px;">
+            <img src="images_six_degrees_of_separation/08.png" style="height:80%;">
+          </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+      <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<br>
+
+<div class="dot_container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <!-- <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span> -->
+</div>
+
+<div class="show-description">about</div>
+<a class="exit-gallery" href="index.html">back</a>
+
+<!-- DESCRIPTION -->
+      <div class="description"> 
+          Map for Expo <br>
+          'Six Degrees of Separation'
+          <br><br>
+          <p class="reading_text">
+          ''Six Degrees of Separation' is a collaborative exhibition project between the Non Linear Narrative master programme of the Royal Academy of Art, The Hague, the Archaeology Department of the Municipality of The Hague and the ‘Rotterdamsebaan’ major road project. The project offered students direct access to archaeological remains found on the Rotterdamsebaan tunnel excavation site, in order to re-contextualize these human artefacts and link them to contemporary issues affecting the City of The Hague today. The project resulted in a public exhibition at De Besturing in The Hague that explores new narratives of land speculation, property development, migration and endangered craftsmanship.'<br>
+          The double-sided map for the exhibition is a map of The Hague, indicating the Rotrerdamsebaan with descriptions of the projects on one side, and a verticle 'soil map' with the matching archeological findings on the other. The layout of the map was designed in a way that could be used as a handout/poster during the exhibition, band afterwards become part of the publication/catalogue.
+          </p>
+          <br>
+          Designed in collaboration with Natalia Sliwinska and Lance Laoyan.<br>
+          Supervised by Lauren Alexander and Niels Schrader.<br>
+          Exhibition photography by Boel Backaert and Frank Jansen.<br>
+          2019
+          <a class="exit-description">close</a>
+      </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+$(".show-description").click(function () {
+    // $(".slideshow-container").addClass("background_blur");
+    // $(".dot").addClass("background_blur");
+    // $(".show-description").addClass("background_blur");
+    $(".description").css("display", "block");
+});
+
+$(".exit-description").click(function () {
+    $(".description").css("display", "none");
+    // $(".slideshow-container").removeClass("background_blur");
+    // $(".dot").removeClass("background_blur");
+    // $(".show-description").removeClass("background_blur");
+});
+
+
+</script>
+
+</body>
+</html> 

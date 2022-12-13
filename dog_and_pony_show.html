@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="style_dog_and_pony_show.css"/>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<title>2992</title>
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1/5</div>
+        <img src="images_dog_and_pony_show/01.png" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/5</div>
+        <img src="images_dog_and_pony_show/02.png" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img src="images_dog_and_pony_show/03.png" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="images_dog_and_pony_show/04.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="images_dog_and_pony_show/05.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+      <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<br>
+
+<div class="dot_container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<div class="show-description">about</div>
+<a class="exit-gallery" href="index.html">back</a>
+
+<!-- DESCRIPTION -->
+      <div class="description"> 
+          Dog & Pony Show Posters & Merch
+          <br><br>
+          <p class="reading_text">
+          Posters for the annual Dog & Pony Show, presentation of first graduation project ideas by Graphic Design BA students at KABK.
+          </p>
+          Silkscreen print on matt and glossy paper.<br>
+          Concept and design in collaboration with Asya Sukhorukova.<br>
+          2018
+          <a class="exit-description">back</a>
+      </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+$(".show-description").click(function () {
+    // $(".slideshow-container").addClass("background_blur");
+    // $(".dot").addClass("background_blur");
+    // $(".show-description").addClass("background_blur");
+    $(".description").css("display", "block");
+});
+
+$(".exit-description").click(function () {
+    $(".description").css("display", "none");
+    // $(".slideshow-container").removeClass("background_blur");
+    // $(".dot").removeClass("background_blur");
+    // $(".show-description").removeClass("background_blur");
+});
+
+
+</script>
+
+</body>
+</html> 
