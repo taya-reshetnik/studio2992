@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="style_binominale.css"/>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<title>2992</title>
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+     <div class="mySlides fade">
+      <div class="numbertext">1/5</div>
+        <div style="position:relative;">
+          <iframe src="https://player.vimeo.com/video/774799105?h=680c9d51df&autoplay=1&loop=1&muted=1" 
+          style="top:0; left:0; height:92vh;" 
+          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+     </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/5</div>
+        <img src="images/01.png" style="height:92vh; padding-top: 40px">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img src="images/02.png" style="height:92vh; padding-top: 40px">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="images/03.png" style="height:92vh; padding-top: 40px">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="images/04.png" style="height:92vh; padding-top: 40px">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+      <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<br>
+
+<div class="dot_container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<div class="show-description">about</div>
+<a class="exit-gallery" href="../">back</a>
+
+<!-- DESCRIPTION -->
+      <div class="description"> 
+          Website and identity<br>
+          design for 'Binominale'
+          <br><br>
+          <p class="reading_text">
+          'Binominale' is a curatorial project by Swiss multidisciplinary design studio Fragmentin. Concerned with the wastefulness and environmental impact of exhibitions due to travelling, Fragmentin wanted to create an online platform for collaborations for artists. The first edition of the Binominale had to become a template, based on which the project could be run by different group or collective in the future. The design of the website made in collaboration with Fragmentin and Pablo Perez is derived from the structure of the process of collaboration between artists. Each step in communication is linking to the next mutual giving of instructions, leading to the final step—IRL exhibition in two locations where participants are from and an online streaming.
+          </p>
+          <br>
+          More information on: <a style="color: black;" target="_blank" href="https://binominale.art">binominale.art</a><br>
+          Identity and website design in collaboration with Pablo Perez and Fragmentin.<br>
+          Website development by INT studio.<br>
+          2021
+
+          <a class="exit-description">close</a>
+      </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+var stopVideos = function () {
+  var videos = document.querySelectorAll('iframe, video');
+  Array.prototype.forEach.call(videos, function (video) {
+    if (video.tagName.toLowerCase() === 'video') {
+      video.pause();
+    } else {
+      var src = video.src;
+      video.src = src;
+    }
+  });
+};
+
+
+$(".show-description").click(function () {
+    $(".description").css("display", "block");
+});
+
+$(".exit-description").click(function () {
+    $(".description").css("display", "none");
+});
+
+$(".next").click(function () {
+    stopVideos();
+});
+
+$(".prev").click(function () {
+    stopVideos();
+});
+
+
+</script>
+
+</body>
+</html> 
