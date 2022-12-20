@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="style.css"/>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<title>2992</title>
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+     <div class="mySlides fade">
+      <div class="numbertext">1/8</div>
+        <div style="position:relative;">
+          <iframe src="https://player.vimeo.com/video/282894328?h=1b2ed6dce0&autoplay=1&muted=1" 
+          style="top:0; left:0; height:92vh;" 
+          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="text">video: 10 min</div>
+     </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/01.jpg" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/02.jpg" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/04.png" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/05.png" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/06.png" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/07.png" style="height:70%;">
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8/8</div>
+          <div style="display: flex; justify-content: center; align-items: center;
+                      height:92vh; padding-top: 40px;">
+              <img src="images/08.png" style="height:70%;">
+          </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+      <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<br>
+
+<div class="dot_container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<div class="show-description">about</div>
+<a class="exit-gallery" href="../">back</a>
+
+<!-- DESCRIPTION -->
+      <div class="description"> 
+          The Undesirables
+          <br><br>
+          <p class="reading_text">
+          'The Undesirables' is a story about the resistance between the Station and the unwanted spirits which has been going on for almost 200 years. It is based on the historical research of the Utrecht Central Station from the moment of its creation in 1843, when it was built on the place of a small cemetery for criminals.<br>
+          'The Undesirables' is a metaphor, used to show how privatisation and securitisation of public spaces change their political meaning and turn them into ‘non-places’, where the entrance is not by right, but by permission. They have a departicularized character, that looks very much alike and pretends to be public. On one hand current solution (‘supervision and enforcement’) is aiming to make the urban environment safe, but on the other, it’s turning it into a space of increasing discrimination, where every individual is treated as a customer and at the same time–potential criminal.<br>
+          Video installation consists of main projection, supported by a voiceover and two small screens. The main video displays a partially fictional narrative, following the timeline of real events. The scaffolding skeleton, which holds the 3-dimentional collage, combining images of architecture of the station from different periods of time, capture a building in constant flux, creating a landscape of failed attempts to resist the undesirables.<br>
+          The two additional small screens show archival images and real facts, on which the story is based on.
+          </p>
+          <br>
+          Video installation, 10 min<br>
+          Graphic Design Department Award.<br>
+          Supervised by Thomas Buxó and Agata Jaworska.<br>
+          Special thanks to Roosje Klap and Niels Schrader.<br>
+          Credits: Jan Egbers, Arjan den Boer, Ernie Mellegers, Jan-Willem Oudhof, Maša Galič, Kevin Bray, Agnes Algera, Leith Benkhedda, Ruben Pater, Jakob Schlötter.<br>
+          2018
+
+          <a class="exit-description">close</a>
+      </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+var stopVideos = function () {
+  var videos = document.querySelectorAll('iframe, video');
+  Array.prototype.forEach.call(videos, function (video) {
+    if (video.tagName.toLowerCase() === 'video') {
+      video.pause();
+    } else {
+      var src = video.src;
+      video.src = src;
+    }
+  });
+};
+
+
+$(".show-description").click(function () {
+    // $(".slideshow-container").addClass("background_blur");
+    // $(".dot").addClass("background_blur");
+    // $(".show-description").addClass("background_blur");
+    $(".description").css("display", "block");
+});
+
+$(".exit-description").click(function () {
+    $(".description").css("display", "none");
+    // $(".slideshow-container").removeClass("background_blur");
+    // $(".dot").removeClass("background_blur");
+    // $(".show-description").removeClass("background_blur");
+});
+
+$(".next").click(function () {
+    stopVideos();
+});
+
+$(".prev").click(function () {
+    stopVideos();
+});
+
+</script>
+
+</body>
+</html> 
