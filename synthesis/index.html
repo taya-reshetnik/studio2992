@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="style.css"/>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<title>2992</title>
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1/10</div>
+        <img src="images/01.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/10</div>
+        <img src="images/02.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/10</div>
+        <img src="images/03.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/10</div>
+        <img src="images/04.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/10</div>
+        <img src="images/05.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6/10</div>
+        <img src="images/06.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7/10</div>
+        <img src="images/07.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8/10</div>
+        <img src="images/08.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9/10</div>
+        <img src="images/09.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10/10</div>
+        <img src="images/10.jpg" style="height:92vh; padding-top: 40px">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+      <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+</div>
+
+<br>
+
+<div class="dot_container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+
+<div class="show-description">about</div>
+<a class="exit-gallery" href="../">back</a>
+
+<!-- DESCRIPTION -->
+      <div class="description"> 
+          Synthesis: About Forms,<br>
+          Lines & Feelings
+          <br><br>
+          <p class="reading_text">
+          <a style="color:black" target="_blank" href="https://www.behance.net/gallery/74269391/Synthesis">'Synthesis'</a> is a project by a Moscow-based photographer Lora Bergen. Together with two other image-makers we contributed to her project about movement and time. This serie of collages is my input.
+          The same way as deconstruction is a way of understanding the relationship between text and meaning—collage is aiming to do the same but through visual means. The intricate, but at the same time intriguing part about this serie, is its starting point—the black and white photographs capturing an unstable moment during the dance performance, influencing the uncertain direction from its very beginning. The dance itself is influenced by another ever changing media–music, at least our perception of it is never fixed. It is creating a chain reaction of unstable events influencing each other. My contribution—the final step. I broke the ‘chain’ into separate elements and chose those, which felt necessary for the particular collage: contraforma, draping fabric, skin texture, tension in the muscle. I put them back together in a different manner. It is my take on reflecting on the whole process. Perhaps looking at these elements in a rearrangement and a new context will give a new insight.
+          </p>
+          Risoprint A3<br>
+          2019
+          <a class="exit-description">close</a>
+      </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+$(".show-description").click(function () {
+    // $(".slideshow-container").addClass("background_blur");
+    // $(".dot").addClass("background_blur");
+    // $(".show-description").addClass("background_blur");
+    $(".description").css("display", "block");
+});
+
+$(".exit-description").click(function () {
+    $(".description").css("display", "none");
+    // $(".slideshow-container").removeClass("background_blur");
+    // $(".dot").removeClass("background_blur");
+    // $(".show-description").removeClass("background_blur");
+});
+
+
+</script>
+
+</body>
+</html> 
