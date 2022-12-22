@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <title>studio2992</title>
+    <meta name="description" content="studio2992 is a multidisciplinary graphic design studio of Taya Reshetnik. It focuses on research-based visual and spatial storytelling about human experience in urban environment.">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='style.css'/>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+
+                    $("#info").click(function () {
+                        $(".project-grid").addClass("blur");
+                            $("#pr-info").css("display", "block");
+                            $(".tag-container").fadeOut("slow");
+                      });
+
+                          $(".show_text").click(function () {
+                              $(".act-text").fadeIn("slow");
+                              $(".text_bckg").fadeIn("slow");
+                            });
+
+
+                            $(".back").click(function () {
+                                    $(".project-grid").removeClass("blur");
+                                    $(".image-container, .act-text").scrollTop(0);
+                                    $(".videoContainer")[0].pause();
+                                    $(".pr-box").css("display","none");
+                                    $(".tag-container").fadeIn("slow");
+                                    $(".about-container").fadeIn("slow");
+                               });
+
+                                $(".show-gallery").click(function () {
+                                        $(".gallery-pr-black").css("display","flex");
+                                   });
+                                      $(".exit-gallery").click(function () {
+                                              $(".gallery-pr-black").css("display","none");
+                                         });
+
+
+            $(".logo").click(function () {
+                    $(".hello").css("display", "block");
+               });
+
+
+                    $("#all").click(function () {
+                        $(".all_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                     });
+
+                    $("#autonomous").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".auto_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#commissioned").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".com_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#video").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".vid_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#print").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".print_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#installation").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".instal_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#visual").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".vis_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#exhibition").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".expo_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#webdesign").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".web_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    $("#illustration").click(function () {
+                        $(".all_tag").css("display", "none");
+                        $(".illustr_tag").css("display", "block");
+                        $(".tag").css("background-color", "black");
+                        $(".tag").css("color", "#d2691e");
+                        $(this).css("background-color", "#FF6700");
+                        $(this).css("color", "black");
+                       });
+
+                    window.addEventListener("load",function() {
+                    setTimeout(function(){
+                        window.scrollTo(0, 1);
+                    }, 0);
+                });
+     });
+</script>
+
+<script>
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showDivs(1, 0);
+showDivs(1, 1);
+showDivs(1, 2);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+
+</head>
+
+<body>
+
+<!-- MAIN CONTAINER -->
+  <div id="container">
+
+
+<!-- MENU -->
+      <div class="DIV" id="myDIV">
+
+        <div class='project-grid-container'>
+
+            <div class="intro">
+                Multidisciplinary graphic design and research studio of Taya Reshetnik based in The Hague, Netherlands. studio2992's autonomous work emerges from investigative and microhistorical research and tells visual stories about human experience in urban environment. Among commissioned and collaborative projects are examples of graphics and navigation designs for exhibitions, visual identities, social media campaigns,  web and print designs for museums, cultural events and artist initiatives.
+            </div>
+          
+          <div class='project-grid'>
+
+              <a class='project-grid-item all_tag auto_tag instal_tag print_tag' href="the_black_black_house/">
+	                <img class="menuimg" id="first_menu_img" src="images/black_black_house.jpg"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;The Black Black House</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag vid_tag instal_tag' href="the_undesirables/">
+	                <img class="menuimg" src="images/the_undesirables.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;The Undesirables</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag com_tag vis_tag web_tag' href="binominale/">
+	                <img class="menuimg" src="images/binominale.gif"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Identity for Binominale</div>
+		      </a>
+
+
+		      <a class='project-grid-item all_tag com_tag vid_tag vis_tag'
+		            href="who_speaks/">
+	                <img class="menuimg" src="images/who_speaks.gif"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Identity for 'Who Speaks?' Symposium</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag com_tag'
+		            href="valkhof_kam_museum/">
+	                <img class="menuimg" src="images/valkhof_kam_museum.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Annual Report for The Valkhof-Kam Museum</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag print_tag'
+		            href="eighty_seven_days/">
+	                <img class="menuimg" src="images/eighty_seven_days.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Eighty Seven Days</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag com_tag print_tag expo_tag'
+		            href="six_degrees_of_separation/">
+	                <img class="menuimg" src="images/six_degrees_of_separation.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Map for Expo: Six Degrees Of Separation</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag print_tag instal_tag'
+		            href="eu_coherence/">
+	                <img class="menuimg" src="images/eu_coherence.jpg"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;EU Coherence</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag com_tag expo_tag vis_tag vid_tag print_tag'
+		            href="let_me_tell_you_about/">
+	                <img class="menuimg" src="images/let_me_tell_you_about.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Let Me Tell You About...</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag print_tag com_tag'
+		            href="browsing_through_the_book/">
+	                <img class="menuimg" src="images/browsing_through_the_book.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Browsing Through the Book</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag print_tag'
+		            href="i_skim_it/">
+	                <img class="menuimg" src="images/i_skim_it.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;I Skim It</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag instal_tag print_tag com_tag'
+		            href="gesture_legend/">
+	                <img class="menuimg" src="images/gesture_legend.jpg"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Gesture Legend</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag com_tag print_tag'
+		            href="synthesis/">
+	                <img class="menuimg" src="images/synthesis.jpg"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Synthesis: About Forms, Lines & Feelings</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag vis_tag print_tag'
+		            href="graphic_design_graduation_show/">
+	                <img class="menuimg" src="images/graphic_design_graduation_show.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Graphic Design Graduation Show 2018</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag vis_tag print_tag illustr_tag'
+		            href="dog_and_pony_show/">
+	                <img class="menuimg" src="images/dog_and_pony_show.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Dog & Pony Show</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag'
+		            href="inside_out/">
+	                <img class="menuimg" src="images/inside_out.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Inside/Out</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag auto_tag'
+		            href="globalizing_intimacy/">
+	                <img class="menuimg" src="images/globalizing_intimacy.gif"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Globalizing Intimacy</div>
+		      </a>
+
+		      <a class='project-grid-item all_tag illustr_tag auto_tag print_tag'
+		            href="collages_and_drawings/">
+	                <img class="menuimg" src="images/collages_and_drawings.png"> 
+		               <div class="titel">&nbsp;&rarr;&thinsp;Collages and Drawings</div>
+		      </a>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+<div class="header">
+    <div class="tag-container">
+      <div class="tag" id="all">all</div>
+      <div class="tag" id="autonomous">autonomous</div>
+      <div class="tag" id="commissioned">commissioned</div>
+      <div class="tag" id="video">video+animation</div>
+      <div class="tag" id="print">print</div>
+      <div class="tag" id="installation">installation</div>
+      <div class="tag" id="visual">visual identity</div>
+      <div class="tag" id="exhibition">expo design</div>
+      <div class="tag" id="webdesign">web design</div>
+      <div class="tag" id="illustration">illustration</div>
+    </div>
+
+
+    <div class="about-container">
+          <div class="contact"><a class="top-links" href="mailto:taya@studio2992.nl">email</a></div>
+              <div class="contact"><a class="top-links" target="_blank" href="https://www.instagram.com/taya.reshetnik/?hl=en">Instagram</a></div>
+                  <div class="contact"><a class="top-links" target="_blank" href="https://vimeo.com/studio2992">Vimeo</a></div>
+                      <div class="contact"><a class="top-links" target="_blank" href="https://www.linkedin.com/in/taya-reshetnik/">LinkedIn</a></div>
+    </div>
+
+  <div class="about-logo">
+    <div class="logo"><img src="images/logo/logo_numbers.png"></div>
+  </div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
