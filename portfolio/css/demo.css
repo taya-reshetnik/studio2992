@@ -1,10 +1,9 @@
-/*@font-face {
-    font-family: "Whois";
-    src: url("../font/whois-mono.woff") format("woff"),
-    url("../font/whois-mono.ttf") format("ttf"),
-    url("../font/whois-mono.eot") format("eot");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-}*/
 @font-face {
     font-family: 'NeueMontreal-Regular';
     src: url('../fonts/NeueMontreal-Regular.otf') format("opentype");
@@ -18,6 +17,9 @@
     font-family: 'Neue Montreal';
     src: url('fonts/NeueMontreal-Regular.otf') format('opentype');
 }*/
+
+/*DESKTOP*/
+@media (min-width: 800px){
 
 .subtitle{
     position: fixed;
@@ -42,6 +44,7 @@
     left: 0px;
     top: 0px;
 }
+
 .rotate{
     width: 50px;
     margin: 15px;
@@ -74,11 +77,6 @@ body{
     display: flex;
 }
 
-/*#kdj{
- width: 100%;
- height: 100%;
- object-fit: cover;
-}*/
 
 .smaller img{
     margin:25px;
@@ -183,7 +181,6 @@ p{
     width: 100%;
     font-size: 40px;
     font-family: 'NeueMontreal-Regular'; 
-/*    top:0px;*/
 }
 
 .intro-project{
@@ -194,19 +191,6 @@ p{
     text-decoration: underline;
 }
 
-/*h1{
-    color: lightgrey;
-    text-align: center;
-    font-size: 59px;
-    font-family: 'NeueMontreal-Regular';
-}
-
-h3{
-    width:100%;
-    color: lightgrey;
-    text-align: center;
-    font-size: 35px;
-}*/
 .caption{
     color: lightgrey;
     font-size:20px;
@@ -215,6 +199,185 @@ h3{
 }
 .tableofcontents{
     position: absolute;
-    bottom:40px;
+    bottom:100px;
+}
+
+}
+
+/*MOBILE*/
+@media (max-width: 800px){
+
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
+    margin:0px;
+    left: 0px;
+    top: 0px;
+}
+
+.subtitle{
+    position: fixed;
+    color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    bottom: 0;
+}
+
+svg{
+    fill: red;
+}
+body{
+    background-color: black;
+}
+.imgscroll{
+    margin:15px;
+}
+.cont{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+.cont img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.center, .big, .bigger, .centerVert, .smaller{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+.smaller img{
+    margin:25px;
+    max-width: 20%;
+    min-width: 15%
+}
+.bigger{
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+.centerVert{
+    flex-direction: column;
+}
+.center img{
+    margin:25px;
+   /* max-width: 30%;
+    min-width: 25%*/
+}
+.centerVert img{
+    margin:25px;
+    max-width: 70%;
+
+}
+.big video{
+    width: inherit;
+    max-height: 100%;
+}
+
+.horCont, .horSmall{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+.horSmall img, .horSmall video{
+    max-width: 30%;
+    margin: 10px;
+}
+.horCont img, .horCont video{
+    
+    margin: 23px;
+    max-height: 100%;
+}
+.horCont img{
+
+}
+
+.horCont video{
+    width: 45%;
+}
+
+.vertCont{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.vertCont img{
+    margin-bottom: 23px;
+}
+
+.bigger img{
+    margin:25px;
+    max-width: 50%;
+    min-width: 40%
+}
+.bigger video{
+    margin:25px;
+    max-width: 40%;
+    min-width: 30%
+}
+.big img{
+    margin:25px;
+    min-width: fit-content;
+}
+
+.center iframe{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    color: lightgrey;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'NeueMontreal-Regular';
+}
+
+.intro {
+    color: lightgrey;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'NeueMontreal-Regular'; 
+}
+
+.intro-project{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.intro-project:hover{
+    cursor: pointer;
+/*    text-decoration: underline;*/
+}
+
+.caption{
+    color: lightgrey;
+    font-size:20px;
+  /*  margin-top: -10px;*/
+
+}
+
 }
 
