@@ -4,6 +4,12 @@ body {font-family: 'Neue Montreal'; sans-serif; margin:0; background-color: blac
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+@font-face {
+	font-family: 'NeueMontreal-Regular';
+	src: url('fonts/NeueMontreal-Regular.otf');
+	font-weight: normal;
+}
+
 /* Slideshow container */
 .slideshow-container {
 /*  max-width: 1000px;*/
