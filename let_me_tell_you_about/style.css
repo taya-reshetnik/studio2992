@@ -12,6 +12,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   text-align: center;
+  background-color: black;
 }
 
 /* Next & previous buttons */
