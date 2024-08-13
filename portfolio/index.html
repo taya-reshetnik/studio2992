@@ -35,13 +35,13 @@
 				        		&#8287;&#8287;&#8287;&#8287;&#8287;freelance for Kossmanndejong
 				        	</div>
 
-				        	<div class='intro-project' onclick='ScrollToPassenger()'>
+				        	<div class='intro-project' onclick='ScrollToLet()'>
 				        		&nbsp;&rarr;&thinsp; 
 				        		Let Me Tell You About ... <br>
 				        		&#8287;&#8287;&#8287;&#8287;&#8287;graphic design internship at Kummer & Herrman
 				        	</div>
 
-						<div class='intro-project' onclick='ScrollToPassenger()'>
+						<div class='intro-project' onclick='ScrollToWho()'>
 				        		&nbsp;&rarr;&thinsp; 
 				        		Who Speaks? Symposium on AI, Language and Democracy <br>
 				        		&#8287;&#8287;&#8287;&#8287;&#8287;for Non Linear Narrative MA
@@ -134,6 +134,32 @@
 				</video>
 			</div>
 
+
+
+
+
+			<div class="horCont" id='let'>
+				<img style="width: 100%;" src="img/let_01.png" />
+			</div>
+			<div class="horCont">
+				<img style="width: 100%;" src="img/let_02.png" />
+			</div>
+			<div class="horCont">
+				<img style="width: 100%;" src="img/let_03.png" />
+			</div>
+
+
+
+			<div class="horCont" id='who'>
+				<img style="width: 100%;" src="img/who_01.png" />
+			</div>
+			<div class="horCont">
+				<img style="width: 100%;" src="img/who_02.png" />
+			</div>
+			<div class="horCont">
+				<img style="width: 100%;" src="img/who_03.png" />
+			</div>
+
 		
 			
 			
@@ -162,6 +188,16 @@
 
 		function ScrollToPassenger() {
 			const element = document.getElementById("passenger");
+			element.scrollIntoView();
+		}
+
+		function ScrollToLet() {
+			const element = document.getElementById("let");
+			element.scrollIntoView();
+		}
+
+		function ScrollToLet() {
+			const element = document.getElementById("who");
 			element.scrollIntoView();
 		}
 
