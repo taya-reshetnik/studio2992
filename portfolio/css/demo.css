@@ -32,7 +32,9 @@
     bottom: 0;
 }
 
-    a {color: white;}
+    a {color: white;
+      text-decoration: none;
+      }
     a:visited {color: white;}
     a:hover {cursor: pointer;}
 
