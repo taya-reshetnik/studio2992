@@ -32,8 +32,8 @@
     bottom: 0;
 }
 
-    a {color: lightgrey;
-      text-decoration: none;
+    a {
+        color: lightgrey;
       }
     a:visited {color: lightgrey;}
     a:hover {
