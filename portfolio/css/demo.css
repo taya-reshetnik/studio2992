@@ -32,6 +32,10 @@
     bottom: 0;
 }
 
+    a {color: white}
+    a:visited {color: white}
+    a:hover {cursor: pointer}
+
 
 .container{
     position: fixed;
