@@ -32,9 +32,9 @@
     bottom: 0;
 }
 
-    a {color: white}
-    a:visited {color: white}
-    a:hover {cursor: pointer}
+    a {color: white;}
+    a:visited {color: white;}
+    a:hover {cursor: pointer;}
 
 
 .container{
@@ -365,6 +365,9 @@ p{
     font-size: 20px;
     font-family: 'NeueMontreal-Regular'; 
 }
+    a {color: white;}
+    a:visited {color: white;}
+    a:hover {cursor: pointer;}
 
 .intro-project{
     font-size: 20px;
